@@ -17,7 +17,19 @@ namespace AdministrasiKampus_RONI
             {
                 try
                 {
+                    Console.WriteLine("Koneksi Ke Database\n");
+                    Console.WriteLine("Masukkan User ID :");
+                    string user = Console.ReadLine();
+                    Console.WriteLine("Masukkan Password :");
+                    string pass = Console.ReadLine();
+                    Console.WriteLine("Masukkan database tujuan :");
+                    string db = Console.ReadLine();
+                    Console.Write("\nKetik R untuk Terhubung ke Database: ");
+                    char chr = Convert.ToChar(Console.ReadLine());
+                    switch (chr)
+                    {
 
+                    }
                 }
             }
         }
