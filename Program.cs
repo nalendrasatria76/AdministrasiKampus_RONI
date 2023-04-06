@@ -28,10 +28,31 @@ namespace AdministrasiKampus_RONI
                     char chr = Convert.ToChar(Console.ReadLine());
                     switch (chr)
                     {
-
-                    }
-                }
-            }
+                        case 'R':
+                            {
+                                SqlConnection conn = null;
+                                string strKoneksi = "Data source = LAPTOP-94VJAKDC\\NALENDRASS; " +
+                                    "initial catalog = {0}; " +
+                                    "User ID = {1}; password = {2}";
+                                conn = new SqlConnection(string.Format(strKoneksi, db, user, pass));
+                                conn.Open();
+                                Console.Clear();
+                                while (true)
+                                {
+                                    try
+                                    {
+                                        Console.WriteLine("\nMenu");
+                                        Console.WriteLine("1. Melihat Seluruh Data");
+                                        Console.WriteLine("2. Tambah Data");
+                                        Console.WriteLine("3. Ubah Data");
+                                        Console.WriteLine("4. Hapus Data");
+                                        Console.WriteLine("5. Cari Data");
+                                        Console.WriteLine("6. Keluar");
+                                        Console.Write("\nEnter your choice (1-6): ");
+                                        char ch = Convert.ToChar(Console.ReadLine());
+                                        switch (ch)
+                                        {
+                                           
         }
     }
 }
